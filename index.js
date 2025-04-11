@@ -56,9 +56,10 @@ class Socketnest {
 		this.events = new Map() // Global event listeners
 		this.connectionPromise = null
 		this.socket = null
-
 		// Connect immediately on instantiation
-		this._connect()
+		if (!options.skipConnect) {
+			this._connect()
+		}
 	}
 	// Internal method to establish the main connection
 	_connect() {
@@ -76,6 +77,7 @@ class Socketnest {
 			}
 			// Create WebSocket connection
 			this.socket = new WebSocket(this.wsUrl, socketOptions)
+
 			// Connection opened
 			this.socket.onopen = () => {
 				// Set up message handler
