@@ -1,10 +1,21 @@
 {
-  "name": "socketnest-js",
-  "version": "0.1.0",
+  "name": "y",
+  "version": "1.0.0",
   "description": "SocketNest JS Client Library",
   "main": "index.js",
   "repository": "git@github.com:SocketNest/socketnest-js.git",
-  "author": "Daniel <hello@danielmlozano.com>",
+  "author": "realdanielmlozano <daniel@danielmlozano.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
