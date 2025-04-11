@@ -1,4 +1,6 @@
 # socketnest-js
+![Tests](https://github.com/SocketNest/socketnest-js/actions/workflows/tests.yml/badge.svg)
+
 SocketNest JS Client Library
 
 ## Installation
