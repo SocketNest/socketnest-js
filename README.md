@@ -15,7 +15,7 @@ yarn add socketnest-js
 const Socketnest = require('socketnest-js');
 
 // Initialize the library
-const socketnest = new Socketnest('your-app-id', 'your-api-key');
+const socketnest = new Socketnest('your-app-id'<int>, 'your-api-key');
 
 // Subscribe to a channel
 const channel = await socketnest.subscribe('my-channel');
