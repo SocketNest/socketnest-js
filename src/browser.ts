@@ -82,7 +82,7 @@ class _SocketnestBrowserImpl {
 				};
 
 				this.socket.onerror = (event: Event) => {
-					console.error("Error connecting to socketnest (Browser)");
+					console.error("Error connecting to socketnest (Browser)", event);
                     const error = new Error("WebSocket connection failed");
                     if (this.connectionPromise) {
 					    reject(error);
