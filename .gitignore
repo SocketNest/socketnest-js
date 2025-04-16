@@ -135,3 +135,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 test.js
+test-cjs.js
+test-esm.mjs

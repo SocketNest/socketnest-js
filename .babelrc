@@ -1,4 +1,4 @@
-{
+   {
   "presets": [
     ["@babel/preset-env", {
       "targets": {
@@ -11,4 +11,4 @@
       "plugins": ["@babel/plugin-transform-modules-commonjs"]
     }
   }
-}
+   }
