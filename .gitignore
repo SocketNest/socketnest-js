@@ -137,3 +137,5 @@ dist
 impl.ts
 test-cjs.js
 test-esm.mjs
+*.bundle.js
+*.bundle.js.map
