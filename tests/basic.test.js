@@ -3,7 +3,7 @@
  */
 
 // Required module imports
-const Socketnest = require("../index")
+const Socketnest = require("../src/index")
 
 // Automatically mock the ws module (will use our implementation in __mocks__)
 jest.mock("ws")

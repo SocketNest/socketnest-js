@@ -12,7 +12,7 @@ module.exports = {
 	coverageReporters: ["json", "text", "lcov", "clover"],
 
 	// A list of paths to directories that Jest should use to search for test files
-	testMatch: ["**/tests/basic.test.js"],
+	testMatch: ["**/tests/**/*.test.js"],
 
 	// The test environment that will be used for testing
 	testEnvironment: "node",
@@ -33,5 +33,16 @@ module.exports = {
 	testTimeout: 30000,
 
 	// Create folder for manual mocks
-	moduleDirectories: ["node_modules", "<rootDir>"],
+	moduleDirectories: ["node_modules", "tests"],
+
+	// Transform files to CommonJS for testing
+	transform: {
+		"^.+\\.js$": "babel-jest",
+	},
+
+	// Default babel configuration if not specified elsewhere
+	transformIgnorePatterns: ["/node_modules/"],
+
+	// Support for both ESM and CommonJS modules
+	moduleFileExtensions: ["js", "json", "node"],
 }
